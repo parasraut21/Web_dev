@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <title>Demo</title>
+    <style>
+        .query {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #ddd;
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <h1 id="a">Madara Uchiha</h1>
+        <h4 class="b">naruto</h4>
+        <h5>Luffy</h5>
+
+        <h2>Before click</h2>
+        <!--This we have onclick,ondblclick-->
+        <button onclick="task()" style="color: white;background-color: blue;">Click Here</button>
+
+        <div align="center" class="query">
+            <h1 class="selectquery"></h1>
+            <button onclick="task2()" style="color: white;background-color: blue;">querySelector</button>
+
+        </div>
+    </div>
+    <script>
+        //This will modify text we had written earlier 
+        //innerHTML = It will give access to HTML  
+        document.getElementById("a").innerHTML = "This is modified by DOM selector"
+            //By class : we have to give index no.
+        document.getElementsByClassName("b")[0].innerHTML = "Ghost Of Uchiha"
+            //By tagname  
+        document.getElementsByTagName("h5")[0].innerHTML = "This is by tagname"
+
+        <!--Dom events-->
+        function task() {
+            document.getElementsByTagName("h2")[0].innerHTML = "This get changed after clicking "
+        }
+
+        //queryselector() --> It is like auto data type
+        //This will pop the message
+        function task2() {
+            // var a = document.createElement("img")
+            // a.setAttribute("src", itachi3.jpg)
+
+            document.querySelector(".selectquery").innerHTML = "This is query selector"
+        }
+    </script>
+
+
+
+</body>
+
+</html>

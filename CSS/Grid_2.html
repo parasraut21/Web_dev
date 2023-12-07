@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Grid</title>
+    <style>
+        .main {
+            display: grid;
+            /*grid-template-columns: 1fr 1fr 1fr;  it will create 3 coloumns*/
+            /*or*/
+            grid-template-columns: repeat( auto-fill, minmax(200px, 1fr));
+            /*it will give a responsiveness to website as we want to open in mobile it will resize itself*/
+            grid-gap: 20px;
+            /*it will give gap between box*/
+            grid-auto-rows: minmax( 100px, auto);
+            /*it will size to box ,minmax(100px,auto)=minimun 100px require and all content will fill as the max size is auto*/
+            grid-auto-columns: mixmax(50px, auto);
+        }
+        
+        .ss {
+            background-color: lightcoral;
+            border: 3px red solid;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="ss">
+            BOX-1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda commodi, eveniet animi fuga deleniti nostrum adipisci quod architecto ipsa, quae numquam laborum suscipit maiores, ducimus est autem quam. Quaerat, odio.
+        </div>
+        <div class="ss">BOX-2</div>
+        <div class="ss">BOX-3</div>
+        <div class="ss">BOX-4</div>
+        <div class="ss">BOX-5</div>
+        <div class="ss">BOX-6</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <title>Change bg colour</title>
+    <style>
+        .bgc {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            box-shadow: 15px 15px 2px black;
+            border-color: brown;
+            border-style: dashed;
+            background-color: chartreuse;
+            padding: 10px;
+            margin: 20px;
+            border-width: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Change bg colour-->
+    <h1 align="center">Ghost of uchiha</h1>
+    <div align="center" class="bgc">
+
+    </div>
+    <script>
+        //Change Bg colour
+        function task() {
+            var r = Math.floor(Math.ramdom() * 255)
+            var g = Math.floor(Math.ramdom() * 255)
+            var b = Math.floor(Math.ramdom() * 255)
+            var z = "rgb(" + r + "," + g + "," + b + ")"
+            console.log(z)
+            document.querySelector(".bgc").style.backgroundColor = z
+        }
+    </script>
+
+</body>
+
+</html>

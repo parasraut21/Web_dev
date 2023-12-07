@@ -1,0 +1,187 @@
+<!--Mini Project-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .pp {
+            background-color: lightcoral;
+            text-align: center;
+            color: blue;
+            cursor: pointer;
+        }
+        
+        a:visited {
+            color: darkblue;
+        }
+        
+        a:hover {
+            color: red;
+        }
+        
+        a:active {
+            color: darkblue;
+        }
+        
+        .header {
+            padding: 5px;
+            text-align: center;
+            background: #ddd;
+            color: black;
+            font-size: 15px;
+        }
+        
+        .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #ddd;
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .ss {
+            background-color: lightcoral;
+            border: 2px #ddd;
+            border-radius: 10px;
+        }
+        
+        .textt {
+            text-align: center;
+        }
+        
+        #item2 {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        
+        #item5 {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        
+        #item1 {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        
+        #item6 {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        
+        .main {
+            display: grid;
+            /*grid-template-columns: 1fr 1fr 1fr;  it will create 3 coloumns*/
+            /*or*/
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr, 1fr));
+            /*it will give a responsiveness to website as we want to open in mobile it will resize itself*/
+            grid-gap: 10px;
+            /*it will give gap between box*/
+            grid-auto-rows: minmax(100px, auto);
+            /*it will size to box ,minmax(100px,auto)=minimun 100px require and all content will fill as the max size is auto*/
+            grid-auto-columns: mixmax(50px, auto);
+        }
+    </style>
+    <title>Mini Project</title>
+</head>
+<!--Mini Project-->
+
+<body class="pp">
+    <div class="header">
+        <h1>HISTORICAL PLACES OF INDIA</h1>
+        <p>(Click on the given text below the image to get brief description)</p>
+    </div>
+    <hr />
+    <div class="main">
+        <div class="ss" id="item1">
+            <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2017/07/Agra1.jpg" alt="Mountains" style="width: 100%;" />
+            <a class="pp" href="https://en.wikipedia.org/wiki/Help:IPA/English" target="_blank">Taj Mahal</a
+        >
+      </div>
+      <div class="ss" id="item2">
+        <img
+          src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/02/Red-Fort-Delhi-400x267.jpg"
+          alt="Forest"
+          style="width: 100%;"
+        />
+        <a
+          class="pp"
+          href="https://en.wikipedia.org/wiki/Red_Fort"
+          target="_blank"
+          >Red Fort Delhi</a
+        >
+      </div>
+
+      <div class="ss" id="item3">
+        <img
+          src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/02/Hawa-Mahal-Jaipur-400x267.jpg"
+          alt="Mountains"
+          style="width: 100%;"
+        />
+        <a
+          class="pp"
+          href="https://en.wikipedia.org/wiki/Hawa_Mahal"
+          target="_blank"
+          >Hawa Mahal</a
+        >
+      </div>
+
+      <div class="ss" id="item4">
+        <img
+          src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/02/Mahabodhi-Temple-Bodh-Gaya-400x261.jpg"
+          alt="Mountains"
+          style="width: 100%;"
+        />
+        <a
+          class="pp"
+          href="https://en.wikipedia.org/wiki/Mahabodhi_Temple"
+          target="_blank"
+          >Mahabodhi Temple</a
+        >
+      </div>
+      <div class="ss" id="item5">
+        <img
+          src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/06/Victoria-Memorial-400x229.jpg"
+          alt="Mountains"
+          style="width: 100%;"
+        />
+        <a
+          class="pp"
+          href="https://en.wikipedia.org/wiki/Victoria_Memorial,_Kolkata"
+          target="_blank"
+          >Victoria Memorial</a
+        >
+      </div>
+
+      <div class="ss" id="item6">
+        <img
+          src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/02/Golden-Temple-400x267.jpg"
+          alt="Mountains"
+          style="width: 100%;"
+        />
+        <a
+          class="pp"
+          href="https://en.wikipedia.org/wiki/Golden_Temple"
+          target="_blank"
+          >Golden Temple</a
+        >
+      </div>
+    </div>
+    <hr />
+    <div class="footer">
+      <p>Thank You</p>
+      <p>Designed And Developed By : Paras Raut</p>
+    </div>
+  </body>
+</html>

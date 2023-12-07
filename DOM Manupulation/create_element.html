@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <title>Create element</title>
+    <style>
+        .element {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #ddd;
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <select onchange="color(this.value)">
+    <option value="">Colour</option>
+    <option value="blue">Blue</option>
+    <option value="red">red</option>
+    <option value="pink">pink</option>
+</select>
+
+    <script>
+        function color(value) {
+            document.body.style.backgroundColor = value
+        }
+    </script>
+</body>
+
+</html>
